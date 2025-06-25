@@ -244,7 +244,10 @@ To guide your response, here are examples of valid affiliation names you can use
 - [NAME] Pirates
 
 If the content suggests an affiliation not in this list, return the exact name as it appears (e.g., "Alabasta Kingdom").
-YOU MUST RETURN AN AFFILIATION. DO NOT PUT A "[NAME] PIRATES" IF THE CHARACTER IS NOT A MEMBER OF THIS CREW.
+YOU MUST RETURN AN AFFILIATION. If REALLY no affiliation is obtainable, put "Unknown". DO NOT PUT A "[NAME] PIRATES" IF THE CHARACTER IS NOT A MEMBER OF THIS CREW.
+DO NOT PUT STRAW HAT PIRATES BUT IF THE CHARACTER IS ONE OF THESE (Luffy, Zoro, Sanji, Merry, Thousand Sunny, Usopp, Nami, Robin, Chopper, Franky, Brook, Zeus, Jinbei)
+
+If the character is a child, or just has no main affiliation, put "Unknown", even if you have a approximate affiliation. Precision is better.
 
 Content (truncated for brevity):
 ${content.substring(0, 3000)}
